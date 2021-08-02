@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The JFrame browser</title>
+        <style>
+            body, html{
+                font-family: sans-serif, monospace; width: 100%; height: 100%; margin: 0; padding: 0;
+            }
+
+
+            #BrowseBox{
+                display: table; empty-cells: show; border-collapse: collapse; width: 100%; height: 100%;
+            }
+
+            #BrowseBox .Control{
+                display: table-row; overflow: auto;
+            }
+
+            #BrowseBox .JFrame{
+                display: table-row; height: 100%; background-color: red; overflow: hidden;
+            }
+
+            #BrowseBox .JFrame iframe {
+                width: 100%; height: 100%; border: none; margin: 0; padding: 0; display: block;
+            }
+
+            #BrowseBox .Control input{
+                float:left;
+                width:100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>The JFrame Browser</h1>
+        <div id="BrowseBox">
+            <div class="Control">
+                <input type="text" placeholder="https://bing.com" id="browserurl"><button onclick="BrowseBoxGo();">=></button>
+            </div><br>
+            <div class="JFrame">
+                <iframe title="Browser" src="https://bing.com" id="JFrame">No iframe support for this JFrame</iframe>
+            </div>
+            <script>
+                const urlbox = document.getElementById("browserurl");
+                const JFrame = document.getElementById("JFrame");
+                function BrowseBoxGo(){
+                    JFrame.src = urlbox.value;
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    font-family: sans-serif, monospace;
+    background-position: center;
+}
+
+.gitta{
+    background-image: url("./image/gitta.jpg");
+    background-position: center;
+}
+
+.center-all{
+    /* width: 50%; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* border: 3px solid green; */
+}
+
+.white-text{
+    color: white;
+}
+
+
+.leftbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rightbar{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+}
