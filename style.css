@@ -1,0 +1,9 @@
+@font-face {
+    font-family: EmotionEN;
+    src: url(EEF.ttf);
+}
+
+body {
+    font-family: sans-serif, monospace;
+    background-position: center;
+}
